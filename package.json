@@ -1,0 +1,35 @@
+{
+  "name": "dsh-client-ui-liang-reasoning",
+  "description": "Restyle the conversation's thinking-gear selector: horizontal slider with per-level icons (难梁/梁圣/梁神)",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makuralymi/dsh-webui-liang-gear-position.git"
+  },
+  "homepage": "https://github.com/makuralymi/dsh-webui-liang-gear-position",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "cordis.patch.yml",
+    "lib/client.js",
+    "lib/index.js"
+  ],
+  "license": "MIT"
+}
